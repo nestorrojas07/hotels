@@ -18,6 +18,7 @@ class HotelRepository extends RepositoryAbstract
         'city' => ['field' =>'city', 'scope' => 'byCity'],
         'address' => ['field' =>'address', 'scope' => 'byAddress'],
         'starts' => ['field' =>'starts', 'scope' => 'byStarts'],
+        'search' => ['field' =>'search', 'scope' => 'bySearch'],
     ];
 
     public function create(array $data)

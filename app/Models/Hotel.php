@@ -74,6 +74,13 @@ class Hotel extends Model
         return $query->where('starts' , '<=', $starts);
     }
 
+    public function scopeBySearch($query, $seach)
+    {
+        return $query->orWhere(\DB::raw('LOWER( name )'), 'LIKE' , '%'.strtolower($seach).'%')
+            ->orWhere(\DB::raw('LOWER( city )'), 'LIKE' , '%'.strtolower($seach).'%')
+            ->orWhere(\DB::raw('LOWER( address )'), 'LIKE' , '%'.strtolower($seach).'%');
+    }
+
 
     /*
     |--------------------------------------------------------------------------
