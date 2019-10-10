@@ -1,0 +1,337 @@
+{
+	"info": {
+		"_postman_id": "e8c1674c-6c60-4279-895f-8de9b4e74712",
+		"name": "cheil",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "groupHotels",
+			"item": [
+				{
+					"name": "index",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/hotelsgroups?name=G",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"hotelsgroups"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "G"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GHshow",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/hotelsgroups/e544da92-c453-4b3b-8e09-b6066a58f5ee",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"hotelsgroups",
+								"e544da92-c453-4b3b-8e09-b6066a58f5ee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GHcreate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"prueba\",\n\t\"description\":\"description\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/hotelsgroups",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"hotelsgroups"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GHupdate",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Actualizando el grupo\",\n    \"description\": \"Actualizando la Descripcion3\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/hotelsgroups/f78619ab-427f-4d43-9b66-328eee18ee94",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"hotelsgroups",
+								"f78619ab-427f-4d43-9b66-328eee18ee94"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GHDelete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/hotelsgroups/d5321241-1956-49d6-b132-227f66209ae2",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"hotelsgroups",
+								"d5321241-1956-49d6-b132-227f66209ae2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Hotels",
+			"item": [
+				{
+					"name": "Hindex",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/hotels?name=G",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"hotels"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "G"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Hshow",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/api/hotelsgroups/e544da92-c453-4b3b-8e09-b6066a58f5ee",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"hotelsgroups",
+								"e544da92-c453-4b3b-8e09-b6066a58f5ee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Hcreate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Requested-With",
+								"type": "text",
+								"value": "XMLHttpRequest"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"prueba\",\n\t\"group_hotel_id\":\"e544da92-c453-4b3b-8e09-b6066a58f5ee\",\n\t\"address\":\"Avenida Siempre viva 123\",\n\t\"city\":\"Bogota\",\n\t\"starts\":5\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/hotels",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"hotels"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Hupdate",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Requested-With",
+								"type": "text",
+								"value": "XMLHttpRequest"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"prueba\",\n\t\"group_hotel_id\":\"e544da92-c453-4b3b-8e09-b6066a58f5ee\",\n\t\"address\":\"Avenida Siempre viva 12\",\n\t\"city\":\"Bogota\",\n\t\"starts\":4\n}"
+						},
+						"url": {
+							"raw": "{{host}}/api/hotels/12412c57-0650-4c95-a21d-2e7aefbae621",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"hotels",
+								"12412c57-0650-4c95-a21d-2e7aefbae621"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
